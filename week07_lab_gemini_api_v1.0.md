@@ -508,8 +508,8 @@ flutter run
 
 <img width="1470" height="922" alt="image" src="https://github.com/user-attachments/assets/0010de14-d51a-4103-806c-5c32ea02daf6" />
 
-- คำอธิบาย <br>
-เมื่อไม่เปิด Structured Output ในขั้นตอน 1.1 โมเดลอาจตอบข้อความเพิ่มเติมหรือจัดรูปแบบ JSON ไม่สม่ำเสมอ แต่เมื่อเปิด Structured Output ผลลัพธ์จะถูกบังคับให้เป็น JSON ที่มีฟิลด์ `title`, `category` และ `description` ตาม Schema จึงนำไปใช้งานในโปรแกรมได้ง่ายและลดข้อผิดพลาดในการอ่านข้อมูล
+- **คำอธิบาย** <br>
+เมื่อไม่เปิด Structured Output โมเดลจะพยายามตอบเป็น JSON ตามคำสั่งที่ระบุไว้ใน Prompt แต่ยังมีโอกาสที่รูปแบบผลลัพธ์จะไม่เป็นไปตามโครงสร้างที่กำหนดอย่างแน่นอน ส่วนเมื่อเปิด Structured Output และกำหนด Response Schema ระบบจะบังคับรูปแบบผลลัพธ์ในระดับ API ให้เป็น JSON ตาม Schema ที่กำหนด โดยมี Field title, category และ description ครบถ้วน ทำให้สามารถนำผลลัพธ์ไป Parse และใช้งานต่อในแอปพลิเคชันได้อย่างเป็นระบบและคาดเดาโครงสร้างได้มากกว่า
 ---
 
 ## ส่วนที่ 2: สร้าง GeminiService พื้นฐานสำหรับ Text Generation

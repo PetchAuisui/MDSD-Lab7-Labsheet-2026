@@ -506,10 +506,10 @@ flutter run
 
 > ✅ **Checkpoint 1.2** ถ่ายภาพหน้าจอที่แสดงการตั้งค่า Structured Output และผลลัพธ์ที่ได้ อธิบายว่าผลลัพธ์ที่ได้ต่างจากตอนไม่เปิด Structured Output ในขั้นตอน 1.1 อย่างไร (อ้างอิงบทหนังสือเรียนหัวข้อ 7.4)
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="1470" height="922" alt="image" src="https://github.com/user-attachments/assets/0010de14-d51a-4103-806c-5c32ea02daf6" />
 
+- คำอธิบาย <br>
+เมื่อไม่เปิด Structured Output ในขั้นตอน 1.1 โมเดลอาจตอบข้อความเพิ่มเติมหรือจัดรูปแบบ JSON ไม่สม่ำเสมอ แต่เมื่อเปิด Structured Output ผลลัพธ์จะถูกบังคับให้เป็น JSON ที่มีฟิลด์ `title`, `category` และ `description` ตาม Schema จึงนำไปใช้งานในโปรแกรมได้ง่ายและลดข้อผิดพลาดในการอ่านข้อมูล
 ---
 
 ## ส่วนที่ 2: สร้าง GeminiService พื้นฐานสำหรับ Text Generation

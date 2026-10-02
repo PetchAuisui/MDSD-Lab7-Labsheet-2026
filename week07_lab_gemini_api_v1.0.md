@@ -978,9 +978,9 @@ class ListingDraft {
 
 <img width="600" height="1304" alt="Screenshot iPhone 17 02-10-2569 BE at 15 37 26" src="https://github.com/user-attachments/assets/e51d2618-3873-4e36-85df-2ee2df605bd4" />
 
-<img width="1206" height="2622" alt="Screenshot iPhone 17 02-10-2569 BE at 15 45 35" src="https://github.com/user-attachments/assets/8a9219c4-19c3-48b2-a5a5-047f3309fcc8" />
+<img width="600" height="1304" alt="Screenshot iPhone 17 02-10-2569 BE at 15 45 35" src="https://github.com/user-attachments/assets/8a9219c4-19c3-48b2-a5a5-047f3309fcc8" />
 
-<img width="1206" height="2622" alt="Screenshot iPhone 17 02-10-2569 BE at 15 44 28" src="https://github.com/user-attachments/assets/1e5d25b0-e07d-4d36-953f-6bc70008a74c" />
+<img width="600" height="1304" alt="Screenshot iPhone 17 02-10-2569 BE at 15 44 28" src="https://github.com/user-attachments/assets/1e5d25b0-e07d-4d36-953f-6bc70008a74c" />
 
 ---
 

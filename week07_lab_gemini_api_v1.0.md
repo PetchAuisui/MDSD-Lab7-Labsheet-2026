@@ -922,10 +922,10 @@ class MyApp extends StatelessWidget {
 > ✅ **Checkpoint 3.1** รันแอปแล้วทดสอบกด Bottom Navigation Bar สลับไปมาระหว่าง "หน้าหลัก" กับ "ลงประกาศขาย" อย่างน้อย 3 รอบ ถ่ายภาพหน้าจอ 2 ภาพ คือ (ก) Tab หน้าหลักที่มี Bottom Navigation Bar แสดงอยู่ด้านล่าง และ (ข) Tab ลงประกาศขายที่เลือกรูปภาพสินค้าไว้แล้ว จากนั้นทดสอบเพิ่มเติมว่าเลือกรูปภาพไว้ใน Tab ลงประกาศขาย แล้วสลับไป Tab หน้าหลักแล้วสลับกลับมา รูปภาพที่เลือกไว้ยังอยู่หรือไม่ (ถ้าหายไป แปลว่ายังใช้ `IndexedStack` ไม่ถูกต้อง ให้ตรวจสอบโค้ดใน `MainScaffold` อีกครั้ง) และทดสอบว่าไอคอนตะกร้าใน AppBar ของ Tab หน้าหลักยังกดไปหน้า Checkout ได้ตามปกติเหมือนที่ทดสอบไว้แล้วใน Checkpoint 0.1
 
 - (ก) Tab หน้าหลักที่มี Bottom Navigation Bar แสดงอยู่ด้านล่าง
-<img width="1206" height="2622" alt="Screenshot iPhone 17 02-10-2569 BE at 15 13 18" src="https://github.com/user-attachments/assets/21393793-131f-46a0-a464-447dece26b29" />
+<img width="600" height="1304" alt="Screenshot iPhone 17 02-10-2569 BE at 15 13 18" src="https://github.com/user-attachments/assets/21393793-131f-46a0-a464-447dece26b29" />
 
 - (ข) Tab ลงประกาศขายที่เลือกรูปภาพสินค้าไว้แล้ว
-<img width="1206" height="2622" alt="Screenshot iPhone 17 02-10-2569 BE at 15 13 21" src="https://github.com/user-attachments/assets/f6e4dd6b-6fef-4f87-aa65-0a59c6ee5c47" />
+<img width="600" height="1304" alt="Screenshot iPhone 17 02-10-2569 BE at 15 13 21" src="https://github.com/user-attachments/assets/f6e4dd6b-6fef-4f87-aa65-0a59c6ee5c47" />
 
 - จากนั้นทดสอบเพิ่มเติมว่าเลือกรูปภาพไว้ใน Tab ลงประกาศขาย แล้วสลับไป Tab หน้าหลักแล้วสลับกลับมา รูปภาพที่เลือกไว้ยังอยู่
 <img width="600" height="1304" alt="Screen Recording iPhone 17 15 24 49 under-10MB" src="https://github.com/user-attachments/assets/9b4b894b-0345-4df8-a058-46c5757b087a" />
@@ -974,11 +974,14 @@ class ListingDraft {
 
 แก้ไขปุ่มที่สร้างไว้ในขั้นตอน 3.2 ให้เรียก `GeminiVisionService().analyzeProductImage(...)` จริง จัดการ 3 สถานะให้ครบตามรูปแบบที่เรียนมาตั้งแต่สัปดาห์ที่ 6 (กำลังวิเคราะห์/สำเร็จ/ผิดพลาด) โดยระหว่างที่กำลังวิเคราะห์ให้แสดง `CircularProgressIndicator` พร้อมข้อความ "AI กำลังวิเคราะห์ภาพสินค้า..." (เพราะใช้เวลานานกว่าการโหลดข้อมูลจาก REST API ทั่วไปตามที่อธิบายในบทหนังสือเรียน)
 
-> ✅ **Checkpoint 4.1** รันแอปแล้วทดสอบเลือกภาพสินค้าจริง กดปุ่ม "ให้ AI ช่วยแนะนำ" ถ่ายภาพหน้าจอผลลัพธ์ที่ AI วิเคราะห์ได้ (title/category/description) ทดสอบซ้ำกับภาพสินค้าอย่างน้อย 3 ภาพที่ต่างกัน แนบภาพหน้าจอทั้ง 3 กรณี 
+> ✅ **Checkpoint 4.1** รันแอปแล้วทดสอบเลือกภาพสินค้าจริง กดปุ่ม "ให้ AI ช่วยแนะนำ" ถ่ายภาพหน้าจอผลลัพธ์ที่ AI วิเคราะห์ได้ (title/category/description) ทดสอบซ้ำกับภาพสินค้าอย่างน้อย 3 ภาพที่ต่างกัน แนบภาพหน้าจอทั้ง 3 กรณี
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="600" height="1304" alt="Screenshot iPhone 17 02-10-2569 BE at 15 37 26" src="https://github.com/user-attachments/assets/e51d2618-3873-4e36-85df-2ee2df605bd4" />
+
+<img width="1206" height="2622" alt="Screenshot iPhone 17 02-10-2569 BE at 15 45 35" src="https://github.com/user-attachments/assets/8a9219c4-19c3-48b2-a5a5-047f3309fcc8" />
+
+<img width="1206" height="2622" alt="Screenshot iPhone 17 02-10-2569 BE at 15 44 28" src="https://github.com/user-attachments/assets/1e5d25b0-e07d-4d36-953f-6bc70008a74c" />
+
 ---
 
 ## ส่วนที่ 5: ออกแบบหน้าจอตรวจทานและแก้ไขก่อนยืนยัน (Human-in-the-loop)
